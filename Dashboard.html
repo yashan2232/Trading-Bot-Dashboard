@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Trading Bot | Dashboard</title>
+	<link rel="stylesheet" href="dashboard.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="dashboard.js"></script>
+
+</head>
+
+<body>
+
+	<div class="navbar">
+		<div class="navbar-left">
+			<img src="logo.png" width="60" height="60">
+		</div>
+
+		<div class="navbar-right">
+			<span class="navbar-user">John Doe</span>
+			<button type="button" class="navbar-btn">Log Out</button>
+		</div>
+	</div>
+	
+	<div class="main">
+
+		<div class="graph">
+			<canvas id="chart" style="width:100%; height: 100%;"></canvas>
+		</div>
+
+		<div class="controls">
+		<label for="Amount">Amount:</label><br>
+		<input type="text" id="lname" name="lname" value="Enter Amount">
+		<button type="button" class="start-bot">Start</button>
+		<form>
+		
+			</form>
+		</div>
+
+		<div class="history">
+			<table id="history-table">
+				<tr>
+					<th>Date</th>
+					<th>Price</th>
+					<th>Quantity</th>
+				</tr>
+			</table>
+		</div>
+
+		<div class="prices"><table id="price-table">
+				<tr>
+					<th>Price</th>
+					<th>Symbol</th>
+				</tr>
+			</table></div>
+		
+
+	</div>
+
+</body>
+
+</html>
